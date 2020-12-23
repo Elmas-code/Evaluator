@@ -1,0 +1,87 @@
+#main{
+    height: 100vh;
+    display: grid;
+}
+
+#proflist{
+    margin-top: 0%;
+    padding: 50px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 90%;
+    margin: auto;
+}
+
+.profImage{
+    background-position: center;
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #cb3333;
+    margin: 50px;
+}
+
+.profImage > h1{
+    color: #cb3333;
+    margin-top: 50px;
+}
+
+.profImage:hover > h1{
+    margin-top: 0px;
+    color: white;
+    background: #cb3333;
+    text-shadow: 0 0 0;
+}
+
+.chooseLecture{
+    background-color: white;
+    height: 0px;
+    width: 300px;
+    transition: 0.5s;
+    visibility: hidden;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 5px #adadad;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.profImage:hover .chooseLecture{
+    height: 260px;
+    width: 300px;
+    visibility: visible;
+}
+
+.profImage:hover .chooseLecture a{
+    text-decoration: none;
+    color: black;
+}
+
+.chooseLecture > a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.chooseLecture > a:not(:hover){
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.alreadyDone{
+    border: 5px solid green;
+}
+
+
+
